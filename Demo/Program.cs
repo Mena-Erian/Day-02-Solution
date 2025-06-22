@@ -217,6 +217,45 @@ namespace Demo
             #endregion
 
             #endregion
+
+
+            #region Convert Vs Parse Vs TryParse
+            //Convert: [is a Class Containing a set of Methods Used For Casting from Datatype to Another]
+            #region Convert
+            ///Console.Write("Please Enter your Name:");
+            ///string? Name = Console.ReadLine();
+            ///
+            ///Console.Write("Please Enter your Age:");
+            ///int Age = Convert.ToInt32(Console.ReadLine());
+            ///
+            ///Console.Write("Please Enter your Salary:");
+            ///decimal Salary = Convert.ToDecimal(Console.ReadLine());
+            ///Console.Clear();
+            /////Console.Beep(1,1);
+            ///Console.WriteLine($"Your Name is {Name}");
+            ///Console.WriteLine($"Your Age is {Age}");
+            ///Console.WriteLine($"Your Salary is {Salary}");  
+            #endregion
+
+            //Parse: [is a Method Used for Casting from String to the Caller Datatype.]
+
+            #region Parse
+            ///Console.Write("Please Enter your Name:");
+            ///string? Name = Console.ReadLine();
+            ///
+            ///Console.Write("Please Enter your Age:");
+            ///int Age =int.Parse(Console.ReadLine() ?? "0");
+            ///
+            ///Console.Write("Please Enter your Salary:");
+            ///decimal Salary = decimal.Parse(Console.ReadLine() ?? "0");
+            ///Console.Clear();
+            /////Console.Beep(1,1);
+            ///Console.WriteLine($"Your Name is {Name}");
+            ///Console.WriteLine($"Your Age is {Age}");
+            ///Console.WriteLine($"Your Salary is {Salary:c}");  
+            #endregion
+
+            #endregion
         }
     }
 }

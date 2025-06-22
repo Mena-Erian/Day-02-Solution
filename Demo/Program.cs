@@ -178,7 +178,45 @@ namespace Demo
             #endregion
             #endregion
 
+            #region Fractions and Discard
+            //float x = 10.5F;
+            //double y = 10.5;
+            //decimal z = 10.5m;
 
+            //// Discard
+            //long Number = 100_000_000_000;
+            //Console.WriteLine($"{Number:c}"); 
+            #endregion
+
+            #region Implicit Casting vs Explicit Casting
+            #region Example 01
+            ///int x = 10;
+            ///long Y = x;
+            ///Console.WriteLine(Y);
+
+            //UnSafe Casting
+            //long x = 100000000000000000;
+            //checked
+            //{
+            //    int y = x.GetType() == typeof(int) ? (int)x : 0;
+            //    unchecked
+            //    {
+            //        Console.WriteLine(y);
+            //    }
+            //} 
+            #endregion
+
+            #region Example 02
+            ///int x = 10;
+            ///double y = (double)x;//1. implicit Catsing [Safe Casting]
+            ///Console.WriteLine(y);
+
+            ///double x = 5.5;
+            ///int y = (int) x; //2. Explicit Casting [UnSafe Casting]
+            ///Console.WriteLine(y); 
+            #endregion
+
+            #endregion
         }
     }
 }

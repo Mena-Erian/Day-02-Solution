@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace Demo
 {
-    internal class Program
+    class Program
     {
         //Entry Point
         static void Main()
@@ -117,8 +118,67 @@ namespace Demo
             #endregion
             #endregion
 
-        }//done part 07 Application Memory
+            #region Objects
+            #region Part 01
+            //Objects Parent for all in C#
+            //The Resons for existence of the object:-
+
+            //1.Genaric
+            //Point3D point3D1 = new Point3D();
+            //point3D1.printGenaric<int>(544454);
+            //point3D1.printGenaric<string>("Genaric Parameter");
+            //point3D1.printGenaric<bool>(true);
+            //point3D1.printObj(544454);
+            //point3D1.printObj("Genaric Parameter");
+            //point3D1.printObj(true);
+            //if simple and you write safte type use Object but any of those use Genaric to avoid the boxs behaviors and to be type safty
+
+            //2.Methods
+            //Point p1 = new Point() { x = 4, y = 6 };
+            //Point p2 = new Point() { x = 4, y = 6 };
+            //Console.WriteLine(p1.ToString());
+            //Console.WriteLine(p1.GetHashCode());
+            //Console.WriteLine(p2.GetHashCode());
+            //Console.WriteLine(p1.Equals(p2));
+            //Console.WriteLine(p1.GetType());  //returns  "Demo.Point"
+            //Point3D p3 = new Point3D() { x = 4, y = 6 };
+            //Point3D p4 = new Point3D() { x = 4, y = 6 };
+            //Console.WriteLine(p3.GetHashCode());
+            //Console.WriteLine(p4.GetHashCode()); 
+            #endregion
+            #region Part 02
+            //object obj;
+            //// Declare for Reference of type "Object" , Refering to the Defult Value of Refernece Type = NULL
+            //// This Reference 'Object' Can Refer to an Instance from type "Object" Or to Any Type.
+            //// CLR Will Allocate 4 UnInitilaized Bytes in STack For the Reference "Object".
+            //// CLR Will Allocate 0 Bytes in HEAP
+
+            //obj = new object();
+            //obj = new string("Hamada");
+            //obj = "Hamada";//syntax sugre
+
+            //    //All of this Struct so it Saved in STACK so
+            //    //How this Value Type Saved in HEAP to get his Address and Pass the references to "Obj"?
+            //    // so it happend the => Boxing
+            //obj = 10;                   //Boxing
+            //obj = 5.5;                  //Boxing
+            //obj = true;                 //Boxing
+            //obj = new DateTime();       //Boxing
+            //obj = new DateOnly();       //Boxing
+            //obj = new TimeOnly();       //Boxing
+
+            //obj = 11;                   //Boxing
+            //int Number = (int) obj;     //UnBoxing
+            //Console.WriteLine(Number);
+
+            //obj = new string("Ahmed");
+            //obj = new Point();
+            ////Parent = Child  
+            ////Animal = Dog    
+            #endregion
+            #endregion
 
 
+        }
     }
 }

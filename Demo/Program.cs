@@ -254,8 +254,11 @@ namespace Demo
             ///Console.WriteLine($"Your Salary is {Salary:c}");  
             #endregion
 
-            // Tryparse : [is a Method ]
+            // Tryparse : [Method is a safe alternative to Parse , Convert a string to a specified type
+            //             and returns a boolean indicating success or failure.
+            //             It does not throw exceptions. ]
             #region TryParse
+
             ///string x = "true";
             ///string x = "hamada";
             ///bool y = bool.Parse(x);
@@ -288,6 +291,91 @@ namespace Demo
 
             #endregion
             #endregion
+
+            #region Operators
+
+            #region Unary Operators
+
+            // Unary Operators => Work on one Operand (Variable)
+            //int x = 10;
+
+            ////1. ++
+
+            //// 1.1 PreFix [Increment and then Print]
+            //Console.WriteLine(++x); // print 11
+            //// 1.2 PostFix [Print and then Increment]
+            //Console.WriteLine(x++); // print 10
+
+            ////2. ++
+
+            //// 2.1 PreFix [Decrement and then Print]
+            //Console.WriteLine(--x); // print 9
+            //// 2.2 PostFix [Print and then Decrement]
+            //Console.WriteLine(x--); // print 10
+
+
+            #endregion
+
+            #region Binary Operators
+            //int Sum, Mul, Div, Sub, Mod;
+            //int Num01 = 2, Num02 = 6;
+
+            //Sum = Num01 + Num02;
+            //Sub = Num01 - Num02;
+            //Mul = Num01 * Num02;
+            //Div = Num01 / Num02;
+            //Mod = Num01 % Num02;
+            #endregion
+
+            #region Assignment Operators
+            //int x;
+            //x = 4;
+            //x += 2; // x = x + 2
+            //x -= 2; // x = x - 2
+            //x *= 2; // x = x * 2
+            //x /= 2; // x = x / 2
+            //x %= 2; // x = x % 2
+            #endregion
+
+            #region Relational Operators
+            // int x = 9, y =5;
+
+            #endregion
+
+            #region Logical Operators
+            //Console.WriteLine(!false);
+            //Console.WriteLine(false && true); // Short Circuit
+            //Console.WriteLine(true || false); // Short Circuit
+            #endregion
+
+            #region Bitwise Operators
+            //Console.WriteLine(~0);
+            //Console.WriteLine(false & true); // Long Circuit
+            //                //0000  & 0001 = 0000
+            //Console.WriteLine(true | false); // Short Circuit
+            #endregion
+
+            #region Ternry Operators [Conditional Oprator]
+            //int X = 10, Y = 5;
+            //string Message = X > Y ? "X is More Than Y" : X < Y? "X is Less Than Y" : "X equals Y";
+            //Console.WriteLine(Message);
+            #endregion
+
+            #endregion
+
+            #region Operators Priorty [Precedence] and Asscoitivity 
+            // Asscoitivity => if i have 2 Operators have ths same Priorty so it is Implemented From Left to Right
+            /*
+                1. Unary Operators (PreFix)
+                2. Round Braces ()
+                3. * / %
+                4. + -
+            */
+
+            int Equation = 4 + 3 * 8;
+            Console.WriteLine(Equation); //28
+            #endregion
+
         }
     }
 }

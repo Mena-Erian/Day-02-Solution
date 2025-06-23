@@ -218,7 +218,6 @@ namespace Demo
 
             #endregion
 
-
             #region Convert Vs Parse Vs TryParse
             //Convert: [is a Class Containing a set of Methods Used For Casting from Datatype to Another]
             #region Convert
@@ -255,6 +254,39 @@ namespace Demo
             ///Console.WriteLine($"Your Salary is {Salary:c}");  
             #endregion
 
+            // Tryparse : [is a Method ]
+            #region TryParse
+            ///string x = "true";
+            ///string x = "hamada";
+            ///bool y = bool.Parse(x);
+            ///Console.WriteLine(y);
+
+            ///string x = "43l";
+            ///
+            ///int y;
+            ///
+            ///bool isParsed = int.TryParse(x, out y); // No Execption will be Thrown
+            ///Console.WriteLine(isParsed);            
+            ///Console.WriteLine(y);
+
+            ////Console.Write("Please Enter your Name:");
+            ////string? Name = Console.ReadLine();
+            ////
+            ////Console.Write("Please Enter your Age:");
+            ////int Age;
+            ////int.TryParse(Console.ReadLine() , out  Age);
+            ////
+            ////Console.Write("Please Enter your Salary:");
+            //////decimal Salary;
+            ////decimal.TryParse(Console.ReadLine(), out decimal Salary);
+            ////
+            ////Console.Clear();
+            //////Console.Beep(1,1);
+            ////Console.WriteLine($"Your Name is {Name}");
+            ////Console.WriteLine($"Your Age is {Age}");
+            ////Console.WriteLine($"Your Salary is {Salary:c}"); 
+
+            #endregion
             #endregion
         }
     }
